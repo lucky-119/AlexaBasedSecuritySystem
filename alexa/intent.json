@@ -1,0 +1,65 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "harassment",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "MonitorHarassmentIntent",
+                    "slots": [
+                        {
+                            "name": "Speech",
+                            "type": "TRIGGER_WORDS"
+                        }
+                    ],
+                    "samples": [
+                        "harass {Speech}",
+                        "harassment {Speech}",
+                        "you {Speech}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "TRIGGER_WORDS",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "hello"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "you"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bitch"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
